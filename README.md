@@ -6,6 +6,10 @@ Data source is a db.json file that you need to serve using json-server
 ```
 ---
 
+![Demo Screenshot](demo.png)
+
+---
+
 #### Steps to finish the task:
 1. Install necessary packages using *NPM*
 2. Fetch users and companies data
