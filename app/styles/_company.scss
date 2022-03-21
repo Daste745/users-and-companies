@@ -1,0 +1,50 @@
+.company {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 0.8em;
+  padding: 0.5em 1em;
+
+  border: 2px $primary-color solid;
+  border-radius: 3px;
+
+  &:hover {
+    filter: brightness(1.8);
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .users {
+    margin-top: 0.5em;
+
+    &.hidden {
+      display: none;
+    }
+
+    h3 {
+      border-bottom: 2px $primary-color solid;
+      margin-bottom: 0.3em;
+    }
+  }
+
+  .expand {
+    margin-left: 1em;
+    color: $secondary-color;
+    padding: 0 0.5em;
+    cursor: pointer;
+
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+      transform: rotate(45deg);
+    }
+
+    &.expanded {
+      transform: rotate(90deg);
+    }
+  }
+}
