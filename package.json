@@ -7,7 +7,8 @@
     "clean": "rimraf dist",
     "start": "webpack-dev-server --mode development --hot",
     "build": "npm run clean && webpack --mode production",
-    "lint": "eslint ./app/index.ts"
+    "lint": "eslint ./app/index.ts",
+    "server": "json-server --watch --port 5000 db.json"
   },
   "author": "Marcin Wanago <marcin@wanago.io> (https://wanago.io)",
   "devDependencies": {
@@ -25,5 +26,8 @@
     "webpack": "4.16.5",
     "webpack-cli": "3.1.0",
     "webpack-dev-server": "3.1.5"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
   }
 }
